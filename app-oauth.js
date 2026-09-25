@@ -5,7 +5,7 @@ import { registerListeners } from './listeners/index.js';
 config();
 
 const app = new App({
-  logLevel: LogLevel.DEBUG,
+  logLevel: LogLevel.INFO,
   signingSecret: process.env.SLACK_SIGNING_SECRET,
   clientId: process.env.SLACK_CLIENT_ID,
   clientSecret: process.env.SLACK_CLIENT_SECRET,
