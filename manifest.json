@@ -28,7 +28,8 @@
       {
         "command": "/sample-command",
         "description": "Runs a sample command",
-        "should_escape": false
+        "should_escape": false,
+        "url": "https://congenial-space-cod-6v5vx7x9pxwghrr76-3000.app.github.dev/slack/events"
       }
     ]
   },
@@ -39,20 +40,25 @@
         "chat:write",
         "commands"
       ]
-    }
+    },
+    "redirect_urls": [
+      "https://congenial-space-cod-6v5vx7x9pxwghrr76-3000.app.github.dev/slack/oauth_redirect"
+    ]
   },
   "settings": {
     "event_subscriptions": {
       "bot_events": [
         "app_home_opened",
         "message.channels"
-      ]
+      ],
+      "request_url": "https://congenial-space-cod-6v5vx7x9pxwghrr76-3000.app.github.dev/slack/events"
     },
     "interactivity": {
-      "is_enabled": true
+      "is_enabled": true,
+      "request_url": "https://congenial-space-cod-6v5vx7x9pxwghrr76-3000.app.github.dev/slack/events"
     },
     "org_deploy_enabled": true,
-    "socket_mode_enabled": true,
+    "socket_mode_enabled": false,
     "token_rotation_enabled": false
   }
 }

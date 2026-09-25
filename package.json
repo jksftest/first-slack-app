@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "A scaffold template for Slack apps",
   "type": "module",
-  "main": "app.js",
+  "main": "app-oauth.js",
   "scripts": {
-    "dev": "node --watch app.js",
+    "dev": "node --watch app-oauth.js",
     "lint": "npx @biomejs/biome check *.js listeners",
     "lint:fix": "npx @biomejs/biome check --write *.js listeners",
-    "start": "node app.js",
+    "start": "node app-oauth.js",
     "test": "node --test tests/**/*.spec.js"
   },
   "author": "Slack Technologies, LLC",
